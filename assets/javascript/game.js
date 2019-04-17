@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     var divRules = $(".rules");
-    var divDisplay = $("#numDisplay")
+    var divcontainer = $("#container")
     divRules.hide();
     $('#btnRules').on('click',function(){
       
@@ -16,12 +16,12 @@ $(document).ready(function(){
 debugger;
         if (divRules.is(':visible')){
             divRules.slideUp('1000');
-            divDisplay.animate({"top" : "50%"});
+            divcontainer.animate({"top" : "45%"});
             
         }
         else {
             divRules.slideDown('1000');
-            divDisplay.animate({"top" : "70%"});
+            divcontainer.animate({"top" : "70%"});
             
         }
         // divRules.toggle('1000');

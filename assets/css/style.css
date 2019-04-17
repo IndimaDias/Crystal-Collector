@@ -6,7 +6,7 @@ body{
 }
 
 .header{
-   margin-top : 7%;
+   margin-top : 5%;
     
    }
 
@@ -21,13 +21,13 @@ h1{
 }
 
 .buttons{
-    background-color: aqua;
+    background-color: rgb(97, 12, 100);
     border-radius: 10%;
     position: absolute;
     margin: 2% 60% 2% 45%;
     font-size: 20px;
     padding: 5px 10px;
-    color: blue;
+    color: rgb(209, 218, 91);
 
 }
 
@@ -42,16 +42,68 @@ h1{
     font-family: 'Almendra',serif;
     font-size: 20px;
     line-height: 30px;
-    color : white;
+    color : rgb(53, 17, 2);
 }
 
-#numDisplay{
+#container{
     text-align: center;
-    position: absolute; 
+    position : absolute; 
     width:100%;
-    top:50%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-style: italic;
-    color: yellow;
+    top : 45%;
+    font-family : Georgia, 'Times New Roman', Times, serif;
+    font-style : italic;
+    height: 30%;
+} 
+/* #numDisplay{
+    text-align: center;
+    position : absolute; 
+    width:100%;
+    top : 45%;
+    font-family : Georgia, 'Times New Roman', Times, serif;
+    font-style : italic;
+    
+} */
+
+/* #numberLabel{
+    padding: 10px 0;
+    color :#ff3300;
+    font-size : 20px;
+} */
+
+.label{
+    padding: 10px 0;
+    color :#ff3300;
+    font-size : 20px;    
+}
+
+/* #randNumber{
+    font-size: 25px;
+    color :red;
+    padding: 15px 0;} */
+
+#grid{
+    display: grid;
+    position: absolute;
+    grid-template-columns:repeat(4,100px);
+    grid-gap: 25px;
+    top:60%;
+    width: 100%;
+    margin-left: 35%;
+
+}
+
+.imgCrystal{
+    height: 100px;
+    width: 100px;
+}
+
+.numberText{
+    font-size: 25px;
+    color :red;
+    padding: 15px 0
+}
+
+#results{
+    position: absolute;
+    top : 90%;
 }
