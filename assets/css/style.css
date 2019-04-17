@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Almendra:700i');
+
+body{
+    background-image: url("http://i.imgur.com/jhGO8A0.jpg?1");
+    background-size: cover;
+}
+
+.header{
+   margin-top : 7%;
+    
+   }
+
+h1{
+    font-family: 'Almendra', serif;
+    font-size: 100px;
+    text-align: center;
+    color: coral;
+    text-shadow: 3px 3px 0 white;  
+    
+
+}
+
+.buttons{
+    background-color: aqua;
+    border-radius: 10%;
+    position: absolute;
+    margin: 2% 60% 2% 45%;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: blue;
+
+}
+
+#dRules{
+    padding: 0 18px;
+    position: absolute;
+    top : 40%;
+}
+
+#pRules{
+    text-align: center;
+    font-family: 'Almendra',serif;
+    font-size: 20px;
+    line-height: 30px;
+    color : white;
+}
+
+#numDisplay{
+    text-align: center;
+    position: absolute; 
+    width:100%;
+    top:50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    color: yellow;
+}
