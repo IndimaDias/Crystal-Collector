@@ -20,6 +20,12 @@ h1{
 
 }
 
+.sectionRules {
+    width : 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .buttons{
     background-color: rgb(97, 12, 100);
     border-radius: 10%;
@@ -54,15 +60,12 @@ h1{
     font-style : italic;
     height: 30%;
 } 
-/* #numDisplay{
-    text-align: center;
-    position : absolute; 
-    width:100%;
-    top : 45%;
-    font-family : Georgia, 'Times New Roman', Times, serif;
-    font-style : italic;
+#numDisplay{
+    width : 35%;
+    margin-left: 30%;
+    margin-right: 30%;
     
-} */
+}
 
 /* #numberLabel{
     padding: 10px 0;
@@ -72,8 +75,10 @@ h1{
 
 .label{
     padding: 10px 0;
-    color :#ff3300;
+    color : black;
     font-size : 20px;    
+    font-weight: bold;
+   ;
 }
 
 /* #randNumber{
@@ -87,8 +92,9 @@ h1{
     grid-template-columns:repeat(4,100px);
     grid-gap: 25px;
     top:60%;
-    width: 100%;
-    margin-left: 35%;
+    width: 50%;
+    margin-left: 30%;
+    margin-right: 30%;
 
 }
 
@@ -99,11 +105,96 @@ h1{
 
 .numberText{
     font-size: 25px;
-    color :red;
+    color :rgb(255, 2, 2);
     padding: 15px 0
 }
 
 #results{
     position: absolute;
     top : 90%;
+    width: 70%;
+    margin-top: 40px;
+    margin-left:10%;
+    margin-right: 30%;
+    padding: 20px;
 }
+
+
+#pWins, #pLose{
+    position: absolute;
+    width : 50%;  
+    text-align: center;
+}
+
+#pWins {
+    left:0;
+}
+
+#pLose{
+    right : 0;
+}
+
+.btnCrystals{
+    height: 120px;
+    width: 120px;
+    border: 1px solid rgb(35, 4, 170);
+    background: linear-gradient(to top left, #3399ff 0%, #cc66ff 100%);
+    border-radius: 10px;
+}
+
+/* #numDisplay, #grid, #results{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+
+.alertModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 20%;
+    right: 25%;
+    top: 20%;
+    width: 60%; /* Full width */
+    height: 100%; /* Full height */
+    
+}
+
+ .modal-header {
+    background: linear-gradient(to top left, #0000ff 0%, #00ffff 100%);
+    margin: 10%; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+    height:10%;
+    border-radius: 10px;
+  }
+
+  #alertId{
+      position: absolute;
+      left:20%;
+      margin:10px;
+      font-size: 16px;
+      font-family: 'UnifrakturMaguntia', cursive;
+      overflow-wrap: break-word;
+      text-align: center;
+
+  }
+
+#divBtnAlert{
+    top : 22%;
+    position: absolute;
+    width: 100%;
+    left: 5%;
+}
+  #btnYes{
+      position: absolute;
+      left :45%;
+  }
+
+  #btnNo{
+
+        position: absolute;
+        left :60%;
+  }

@@ -8,12 +8,25 @@
         <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src = "./assets/javascript/game.js"></script>
+        
             
     </head>
     <body>
         <div class= "mainContentant">
+
+            <div class = "alertModal" id = "modal">
+                <div class = "modal-header">                  
+                       <h2 id = "alertId"></h2>
+                       <div id = "divBtnAlert">
+                            <button type = "button" class = "controlButton" id = "btnYes" value="Y"> Yes </button>
+                            <button type = "button" class = "controlButton" id = "btnNo" value="N"> No </button>
+                        </div>
+                             
+                </div>
+            </div> 
+
             <header class = "header">
                 <h1>
                         Crystals Collector
@@ -48,21 +61,36 @@
                 </div>
     
                 <div id = "grid">
-                    <img class="imgCrystal" src = "./assets/images/5a372fa613bb06.6246191315135661180808.png">
-                    <img class="imgCrystal" src = "./assets/images/kisspng-mugler-aura-eau-de-toilette-perfume-eau-de-parfum-5c489d1e37af55.4552541015482626862281.png">
-                    <img class="imgCrystal" src = "./assets/images/kisspng-pink-m-5affae8ee0b972.1077377915267058069205.png">
-                    <img class="imgCrystal" src = "./assets/images/kisspng-red-diamonds-heart-clip-art-hyderabad-5ac1b236064de8.8615197615226435100258.png">
+                    <button class = btnCrystals value = "1">
+                        <img class="imgCrystal" src = "./assets/images/5a372fa613bb06.6246191315135661180808.png" >
+                    </button>
+
+                    <button class = btnCrystals value = "2">
+                        <img class="imgCrystal" src = "./assets/images/kisspng-mugler-aura-eau-de-toilette-perfume-eau-de-parfum-5c489d1e37af55.4552541015482626862281.png">
+                    </button>
+
+                    <button class = btnCrystals value = "3">
+                        <img class="imgCrystal" src = "./assets/images/kisspng-pink-m-5affae8ee0b972.1077377915267058069205.png">
+                    </button>
+
+                    <button class = btnCrystals value = "4">
+                        <img class="imgCrystal" src = "./assets/images/kisspng-red-diamonds-heart-clip-art-hyderabad-5ac1b236064de8.8615197615226435100258.png">
+                    </button>            
+
+                    
+                    
+                    
                 </div>
                 
                 <div id = "results">
                     <p class = "label"> Total <span id = "total" class = "numberText"></span></p>
                     <div id = "resultWins">
-                        <p class = "label"> Wins <span id = "wins" class = "numberText"></span></p>
-                        <p class = "label"> Looses <span id = "lose" class = "numberText"></span></p>
+                        <p id = "pWins" class = "label"> Wins <span id = "wins" class = "numberText"></span></p>
+                        <p id = 'pLose' class = "label"> Looses <span id = "lose" class = "numberText"></span></p>
                     </div>
 
                 </div>
-        </section>             
+            </section>             
         </div>
         
     </body>
