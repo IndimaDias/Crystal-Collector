@@ -10,13 +10,15 @@ $(document).ready(function(){
     var divcontainer = $("#container");
     var divAlert = $("#modal");
 
-    divRules.hide();
-    divAlert.hide();
+    divRules.hide(); //Hide the dive with rules on page load
+    divAlert.hide(); // Hide the modal with alert messages on page load
 
+
+// This is triggered when the rules button is pressed
     $('#btnRules').on('click',function(){
       
-        
-debugger;
+        // On button click the rules will be slided down or up 
+
         if (divRules.is(':visible')){
             divRules.slideUp('1000');
             divcontainer.animate({"top" : "45%"});
@@ -30,15 +32,18 @@ debugger;
            
     });
 
-    generateNumbers();
+    generateNumbers(); // function to generate random numbers called when page loading
 
     /*-----------------------------------------------------------------------------------------------------------*/
 
     function generateNumbers(){
-        totalNumer = Math.floor(Math.random() * 120) + 19;
+    // This function will generate random nos for number to tallied and the nos for the crystals
+
+        totalNumer = Math.floor(Math.random() * 120) + 19; // number to be tallied. should be between 19 and 120
 
         $("#randNumber").text(totalNumer);
 
+        // for each crystal generate random nos
         $(".btnCrystals").each(function(){
             this.value = Math.floor(Math.random() * 12) + 1;
             console.log(this.value);
@@ -47,13 +52,18 @@ debugger;
     }
 
     /*-------------------------------------------------------------------------------------------------------------*/
+
+    // event called when crystal buttons are clicked
     $(".btnCrystals").on('click', function(){
         console.log(this.value);
-        debugger;
+        
+        // add to the total player guessed
         userCount = userCount + parseInt(this.value);
 
+        // assign to the total field
         $("#total").text(userCount);
 
+        // cpmpare player guessed total and total to be guessed
         if(userCount === totalNumer){
             wins++;
             // alert("You Win");
@@ -100,7 +110,7 @@ function displayAlert(optionId) {
     
     }
     else if(optionId === "E"){ //alert when user decided to quit game
-        debugger;
+        
         alertContect = "Game Over !!!!!!!";
      
         var alertBtnYes = $("#btnYes");
