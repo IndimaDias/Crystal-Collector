@@ -46,7 +46,7 @@ $(document).ready(function(){
         // for each crystal generate random nos
         $(".btnCrystals").each(function(){
             this.value = Math.floor(Math.random() * 12) + 1;
-            console.log(this.value);
+            
         });
        
     }
@@ -55,7 +55,7 @@ $(document).ready(function(){
 
     // event called when crystal buttons are clicked
     $(".btnCrystals").on('click', function(){
-        console.log(this.value);
+        
         
         // add to the total player guessed
         userCount = userCount + parseInt(this.value);

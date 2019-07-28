@@ -62,3 +62,10 @@ Win or loose ask player if wants to play again
 if yes restart game
 
 A modal type is used for user confirmation messages 
+
+
+### Technology
+    * HTML
+    * CSS
+    * Javascript
+    * Jquery
